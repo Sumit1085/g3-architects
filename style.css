@@ -31,10 +31,13 @@ body{
     margin: 32px 0 50px 0;
     cursor: pointer;
 }
+main{
+    max-width: 1300px;
+}
 /* header */
 header{
     background-color: rgba(255, 144, 14, 0.1);
-    height: 1320px;
+    height: 1260px;
 }
 .brand{
     font-size: 30px;
@@ -80,7 +83,21 @@ header{
     width:90%;
 }
 
-/* Header Responsive */
+
+/* Teams Section */
+.teams{
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+.teams .team-img img{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* Responsive Design-------- Header */
 @media screen and (max-width: 576px) {
     .navbar, .nav-links{
         flex-direction: column; 
@@ -97,3 +114,4 @@ header{
     gap: 20px;
 }
 }
+
